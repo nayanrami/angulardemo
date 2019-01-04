@@ -1,0 +1,30 @@
+<p>
+  structuraldirective works!
+</p>
+
+<h2 *ngIf="false ; else elseBlock">
+  True
+</h2>
+<ng-template #elseBlock>
+ ngIf Else Block
+</ng-template>
+
+
+<br/>
+
+<h2 *ngIf="false; then thenBlock; else thenelseblock">
+ True
+</h2>
+
+<ng-template #thenBlock>
+thenBlock
+</ng-template>
+<ng-template #thenelseblock>
+ thenelseblock
+</ng-template>
+
+<ul>
+<div *ngFor = "let col of color ; index as i">
+    <li> {{i}} {{col}}</li>
+</div>
+</ul>
